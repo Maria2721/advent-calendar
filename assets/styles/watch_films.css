@@ -1,0 +1,88 @@
+.card_background {
+    width: 100%;
+    height: fit-content;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(0deg, var(--black-color), var(--blue-color) 100%);
+
+}
+
+.card_inner {
+    width: 60%;
+    height: fit-content;
+
+    padding: 40px;
+}
+
+.film_info{
+    text-align: left;
+    list-style-type: none;
+}
+
+ /* .card_inner_film_cards {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.card_inner_film {
+    font-size: 1.2em;
+} 
+
+.film_poster {
+    width: 100%;
+}
+
+.card_inner_link {
+    font-size: 1.3em;
+}
+
+
+/* @import "./variables.css";
+
+.card_background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, var(--black-color), var(--blue-color) 70%);
+
+}
+
+.card_inner {
+    width: 600px;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 20px;
+}
+
+.card_inner_close_btn {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+    border: 0px;
+    padding: 0px;
+    background-color: var(--light-color);
+}
+
+.card_inner_close_img{
+    width: 100%;
+}
+
+.card_inner_title {
+    color: var(--red-color);
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card_inner_main {
+    text-align: center;
+} */
