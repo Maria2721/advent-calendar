@@ -1,4 +1,44 @@
-@import "./variables.css";
+.card_background {
+    width: 100%;
+    height: fit-content;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: linear-gradient(0deg, var(--black-color), var(--blue-color) 100%);
+
+}
+
+.card_inner {
+    width: 60%;
+    height: fit-content;
+
+    padding: 40px;
+}
+
+.film_info{
+    text-align: left;
+    list-style-type: none;
+}
+
+ /* .card_inner_film_cards {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.card_inner_film {
+    font-size: 1.2em;
+} 
+
+.film_poster {
+    width: 100%;
+}
+
+.card_inner_link {
+    font-size: 1.3em;
+}
+
+
+/* @import "./variables.css";
 
 .card_background {
     width: 100vw;
@@ -7,27 +47,18 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(0deg, var(--black-color), var(--blue-color) 70%);
-    /* background: linear-gradient(0deg, var(--red-color), var(--light-color) 70%); */
+
 }
 
 .card_inner {
-    font-family: var(--main-font);
     width: 600px;
     height: 80vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
+    background-color: var(--light-color);
     border-radius: 20px;
-    /* background: url("../images/free-icon-decoration.png"), var(--light-color);
-    background-repeat: repeat-x;
-    background-position-y: -7px;
-    background-size: 60px; */
-
-    background: url("../images/snowflake.png"), var(--light-color);
-    background-repeat: no-repeat;
-    background-position: 15px 15px;
 }
 
 .card_inner_close_btn {
@@ -42,7 +73,6 @@
 
 .card_inner_close_img{
     width: 100%;
-    filter: invert(15%) sepia(64%) saturate(314%) hue-rotate(182deg) brightness(94%) contrast(91%);
 }
 
 .card_inner_title {
@@ -55,4 +85,4 @@
 
 .card_inner_main {
     text-align: center;
-}
+} */
