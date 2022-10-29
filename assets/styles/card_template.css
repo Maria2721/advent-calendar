@@ -30,6 +30,12 @@
     background-position: 15px 15px;
 }
 
+.img_decor_tree {
+    position: absolute;
+    top: 80vh;
+    right: 500px;
+}
+
 .card_inner_close_btn {
     align-self: flex-end;
     width: 30px;
