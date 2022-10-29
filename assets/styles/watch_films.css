@@ -1,0 +1,31 @@
+.card_background {
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(0deg, var(--black-color), var(--blue-color) 100%);
+
+}
+
+.card_inner {
+    width: 60%;
+    height: fit-content;
+
+    padding: 40px;
+}
+
+.film_info{
+    text-align: left;
+    list-style-type: none;
+}
+
+.card_inner_film {
+    font-size: 1.2em;
+} 
+
+.film_poster {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.card_inner_link {
+    font-size: 1.3em;
+}
