@@ -27,5 +27,5 @@ function openCardFiveMin() {
 }
 
 function closeCard() {
-  location.href = "main.html";
+  location.href = "index.html";
 }
