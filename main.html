@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advent calender</title>
-    
+
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/modal.css">
 
 </head>
 
 <body>
-    <section>
-        <div class="grid__title">Advent Calender 2023</div>
-        <div class="grid-layout">
-            <div class="grid-item grid-item-1"><button class="button" onclick="openCardFilms()">1</button> </div>
-            <div class="grid-item grid-item-2"><button class="button" onclick="openCardSnowman()">2</button> </div>
-            <div class="grid-item span-3 grid-item-3"><button class="button button_green" onclick="openCardSanta()">3</button> </div>
-            <div class="grid-item grid-item-4"><button class="button" onclick="openCardResults()">4</button> </div>
-            <div class="grid-item span-2 grid-item-5"><button class="button button_red" onclick="openCardFairs()">5</button> </div>
-            <div class="grid-item grid-item-6"><button class="button" onclick="openCardBathtime()">6</button> </div>
-            <div class="grid-item grid-item-7"><button class="button" onclick="openCardFiveMin()">7</button> </div>
-            <div class="grid-item grid-item-8"><button class="button">8</button> </div>
-            <div class="grid-item grid-item-9"><button class="button">9</button> </div>
-            <div class="grid-item span-2 grid-item-10"><button class="button button_red">10</button> </div>
-            <div class="grid-item grid-item-11"><button class="button">11</button> </div>
-            <div class="grid-item grid-item-12"><button class="button">12</button> </div>
-            <div class="grid-item span-2 grid-item-13"><button class="button button_red">13</button> </div>
-            <div class="grid-item grid-item-14"><button class="button">14</button> </div>
-            <div class="grid-item grid-item-15"><button class="button">15</button> </div>
-            <div class="grid-item span-1 grid-item-16"><button class="button button_brown">16</button> </div>
-            <div class="grid-item span-3 grid-item-17"><button class="button button_green">17</button> </div>
-            <div class="grid-item grid-item-18"><button class="button">18</button> </div>
-            <div class="grid-item grid-item-19"><button class="button">19</button> </div>
-            <div class="grid-item span-1 grid-item-20"><button class="button button_brown">20</button> </div>
-            <div class="grid-item grid-item-21"><button class="button">21</button> </div>
-            <div class="grid-item grid-item-22"><button class="button">22</button> </div>
-            <div class="grid-item grid-item-23"><button class="button">23</button> </div>
-            <div class="grid-item grid-item-24"><button class="button">24</button> </div>
-    </section>
+    <main>
+        <section>
+            <div class="grid__title">Advent Calender 2023</div>
+            <div class="grid-layout">
+                <div class="grid-item grid-item-1" id="number1">1</div>
+                <div class="grid-item grid-item-2" id="number2">2</div>
+                <div class="grid-item span-3 grid-item-3" id="number3">3</div>
+                <div class="grid-item grid-item-4" id="number4">4</div>
+                <div class="grid-item span-2 grid-item-5" id="number5">5</div>
+                <div class="grid-item grid-item-6" id="number6">6</div>
+                <div class="grid-item grid-item-7" id="number7">7</div>
+                <div class="grid-item grid-item-8"><button class="button">8</button> </div>
+                <div class="grid-item grid-item-9"><button class="button">9</button> </div>
+                <div class="grid-item span-2 grid-item-10"><button class="button button_red">10</button> </div>
+                <div class="grid-item grid-item-11"><button class="button">11</button> </div>
+                <div class="grid-item grid-item-12"><button class="button">12</button> </div>
+                <div class="grid-item span-2 grid-item-13"><button class="button button_red">13</button> </div>
+                <div class="grid-item grid-item-14"><button class="button">14</button> </div>
+                <div class="grid-item grid-item-15"><button class="button">15</button> </div>
+                <div class="grid-item span-1 grid-item-16"><button class="button button_brown">16</button> </div>
+                <div class="grid-item span-3 grid-item-17"><button class="button button_green">17</button> </div>
+                <div class="grid-item grid-item-18"><button class="button">18</button> </div>
+                <div class="grid-item grid-item-19"><button class="button">19</button> </div>
+                <div class="grid-item span-1 grid-item-20"><button class="button button_brown">20</button> </div>
+                <div class="grid-item grid-item-21"><button class="button">21</button> </div>
+                <div class="grid-item grid-item-22"><button class="button">22</button> </div>
+                <div class="grid-item grid-item-23"><button class="button">23</button> </div>
+                <div class="grid-item grid-item-24"><button class="button">24</button> </div>
+        </section>
+        <div id="modalWindow" class="modal">
+            <div class="modal-content">
+                <button type="button" onclick="closeCard()" class="modal-content__closebtn">
+                    <svg class="modal-content__closesvg" xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                        <path
+                            d="m12.45 38.35-2.8-2.8L21.2 24 9.65 12.45l2.8-2.8L24 21.2 35.55 9.65l2.8 2.8L26.8 24l11.55 11.55-2.8 2.8L24 26.8Z" />
+                    </svg>
+                </button>
+                <h2 class="modal-content__title"></h2>
+                <img class="modal-content__img" alt="фото">
+                <p class="modal-content__text"></p>
+                <a class="modal-content__a" target="_blank">
+                    <p class="modal-content__atitle"></p>
+                </a>
+            </div>
+        </div>
+    </main>
 
-    <script src="assets/js/functional.js"></script>
+    <script src="./assets/js/functional.js"></script>
 </body>
 
 </html>

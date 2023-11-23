@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:wght@400;500;600;700&display=swap");
 
 :root {
-    --red-color: #c42034;
-    --light-color: #dedbe6;
-    --blue-color: #283043;
-    --black-color: #141213;
-    --brown-color: #3a1d18;
-    --green-color: #306258;
-    --main-font: 'GFS Didot', serif;
+  --red-color: #c42034;
+  --light-color: #dedbe6;
+  --blue-color: #384563;
+  --black-color: #141213;
+  --brown-color: #3a1d18;
+  --green-color: #306258;
+  --main-font: "GFS Didot", serif;
 }

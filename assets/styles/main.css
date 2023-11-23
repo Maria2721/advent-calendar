@@ -1,93 +1,108 @@
 @import "./variables.css";
 
-section{
-    font-family: var(--main-font);
+section {
+  font-family: var(--main-font);
 }
 
 .grid__title {
-    color: #dedbe6;
-    font-size: 66px;
-    line-height: 2em;
-    text-transform: uppercase;
-    text-align: center;
+  color: #dedbe6;
+  font-size: 66px;
+  line-height: 2em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
-    grid-gap: 10px;
-    grid-auto-rows: minmax(18vh, auto);
-    grid-auto-flow: dense;
-    padding: 20px;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10vw, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(18vh, auto);
+  grid-auto-flow: dense;
+  padding: 20px;
 }
 
 .grid-item {
-    display: flex;
-    margin: 10px;
-    padding: 1rem;
-    font-size: 35pt;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #141213;
-    background-color: #dedbe6;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 90px;
+  display: flex;
+  margin: 10px;
+  padding: 1rem;
+  font-size: 35pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #141213;
+  background-color: #dedbe6;
+  border-radius: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  color: var(--blue-color);
+}
+
+.grid-item:focus {
+  cursor: pointer;
+  border: 5px solid var(--green-color);
 }
 
 .span-1 {
-    grid-column-end: span 2;
-    grid-row-end: span 1;
-    background-color: #3a1d18;
-    color: #dedbe6;
-    font-size: 48pt;
-    border: 2px solid #dedbe6;
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+  background-color: #3a1d18;
+  color: #dedbe6;
+  font-size: 48pt;
+  border: 2px solid #dedbe6;
 }
 
 .span-2 {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
-    background-color: #c42034;
-    font-size: 96pt;
-    color: #3a1d18;
-    border: 2px solid #dedbe6;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  background-color: #c42034;
+  font-size: 96pt;
+  color: #3a1d18;
+  border: 2px solid #dedbe6;
 }
 
 .span-3 {
-    grid-column-end: span 3;
-    grid-row-end: span 2;
-    background-color: #306258;
-    font-size: 116pt;
-    color: #dedbe6;
-    border: 2px solid #dedbe6;
+  grid-column-end: span 3;
+  grid-row-end: span 2;
+  background-color: #306258;
+  font-size: 116pt;
+  color: #dedbe6;
+  border: 2px solid #dedbe6;
 }
 
 .button {
-    border: none;
-    text-decoration: none;
-    background-color: #dedbe6;
-    cursor: pointer;
-
+  border: none;
+  text-decoration: none;
+  background-color: #dedbe6;
+  cursor: pointer;
 }
 
 .button_green {
-    background-color: #306258;
-    color: #dedbe6;
+  background-color: #306258;
+  color: #dedbe6;
+}
+
+.button_green:hover {
+  color: var(--brown-color);
 }
 
 .button_red {
-    background-color: #c42034;
-    color: #3a1d18;
+  background-color: #c42034;
+  color: #3a1d18;
+}
+
+.button_red:hover {
+  color: var(--light-color);
 }
 
 .button_brown {
-    background-color: #3a1d18;
-    color: #dedbe6;
+  background-color: #3a1d18;
+  color: #dedbe6;
 }
 
 body {
-    background-image: url(../images/image_2022-10-29_14-51-23.png);
-    background-size: 100%;
+  background-image: url(../images/image_2022-10-29_14-51-23.png);
+  background-size: 100%;
 }
